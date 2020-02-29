@@ -1,0 +1,44 @@
+{
+    "soft": {
+        "bg": "#EBF3FA",
+        "shadowDown": "#d6dde48d",
+        "shadowUp": "#ffffffcd",
+        "popDark": "#ccd5df",
+        "popLight": "#f3feff",
+        "__make sure to change svg color too__": null,
+        "text": "#31456a"
+    },
+    "_softd": [
+        "#1d1f23",
+        "#121417",
+        "#4D535C"
+    ],
+    "primary": [
+        "#636363",
+        "#8e8e8e",
+        "#a4a4a4"
+    ],
+    "secondary": [
+        "#646464",
+        "#8f8f8f",
+        "#a5a5a5"
+    ],
+    "tertiary": [
+        "#2d2d2d",
+        "#222222"
+    ],
+    "primary1": [
+        "#1769aa",
+        "#2196f3",
+        "#4dabf5"
+    ],
+    "secondary2": [
+        "#007bb2",
+        "#00b0ff",
+        "#33bfff"
+    ],
+    "tertiary3": [
+        "#1C1C50",
+        "#12193b"
+    ]
+}

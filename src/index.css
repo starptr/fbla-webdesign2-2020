@@ -1,13 +1,231 @@
+html {
+	height: 100vh,
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	height: 100vh;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 1rem;
+	color: #31456a;
+}
+
+div {
+	color: #31456a;
+}
+
+a {
+	text-decoration: none;
+	color: #31456a;
+}
+
+a:visited {
+	color: #31456a;
+}
+
+.unlineOnHover:hover {
+	text-decoration: underline;
+}
+
+.pointerOnHover {
+	cursor: pointer;
+}
+
+.link {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	background-color: #E3EDF7;
+	border: none;
+	border-radius: 12px;
+	box-shadow: 6px 6px 12px #d6dde48d, -6px -6px 12px #ffffffcd;
+	outline: none;
+}
+
+.link:hover {
+	cursor: pointer;
+}
+
+.link:active {
+	box-shadow: 6px 6px 12px #d6dde48d, -6px -6px 12px #ffffffcd, inset 6px 6px 12px #d6dde48d, inset -6px -6px 12px #ffffffcd;
+}
+
+button {
+	background-color: #E3EDF7;
+	border: none;
+	border-radius: 12px;
+	box-shadow: 6px 6px 12px #d6dde48d, -6px -6px 12px #ffffffcd;
+	outline: none;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+button:active {
+	box-shadow: 6px 6px 12px #d6dde48d, -6px -6px 12px #ffffffcd, inset 6px 6px 12px #d6dde48d, inset -6px -6px 12px #ffffffcd;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+input[type=text] {
+	font-size: 1rem;
+	background: #E3EDF7;
+	box-shadow: inset 1px 1px 2.4px rgba(136, 165, 191, 0.38), inset -1.4px -1.4px 3.4px #FFFFFF;
+	border-width: 2px !important;
+	border-radius: 16px;
+	border-color: #0000;
+	padding-left: 1em;
+	padding-right: 0.7em;
+	padding-top: 1em;
+	padding-bottom: 0.8em;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+div[class$="Input"] {
+	max-height: 1.1rem !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+div[class$="control-is-focused"] {
+	outline: 0;
+}
+
+.react-select__control {
+	font-size: 1rem;
+	background-color: #E3EDF7 !important;
+	box-shadow: inset 1px 1px 2.4px rgba(136, 165, 191, 0.38), inset -1.4px -1.4px 3.4px #FFFFFF !important;
+	border-width: 2px !important;
+	border-radius: 16px !important;
+	border-color: #0000 !important;
+	/*
+	padding-left: 1em;
+	padding-right: 0.7em;
+	padding-top: 1em;
+	padding-bottom: 0.8em;
+	*/
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.react-select__value-container {
+	padding-left: 1em !important;
+	padding-right: 0.7em !important;
+	padding-top: 1em !important;
+	padding-bottom: 0.8em !important;
+}
+
+.react-select__indicator-separator {
+	max-height: 0 !important;
+	margin: 0 !important;
+}
+
+.react-select__input {
+	max-height: 0 !important;
+	margin: 0 !important;
+}
+
+.react-datepicker-wrapper {
+	width: 100%;
+}
+
+.react-datepicker__input-container {
+	width: 100%;
+}
+
+.react-datepicker:before {
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+	filter: blur(10px);
+	background: inherit;
+}
+
+.react-datepicker {
+	color: #31456a !important;
+	/*background-color: #f008 !important;*/
+	border: 0 !important;
+	background: inherit;
+}
+
+.react-datepicker__header {
+	background-color: #0000 !important;
+	border: 0 !important;
+}
+
+.react-datepicker__current-month {
+	color: #31456a !important;
+}
+
+/*
+Loading
+*/
+
+.lds-ellipsis {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+}
+
+.lds-ellipsis div {
+	position: absolute;
+	top: 33px;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background: #31456a;
+	animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+	left: 8px;
+	animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+	left: 8px;
+	animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+	left: 32px;
+	animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+	left: 56px;
+	animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes lds-ellipsis3 {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+
+@keyframes lds-ellipsis2 {
+	0% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(24px, 0);
+	}
 }

@@ -1,0 +1,189 @@
+[
+    {
+        "id": 3401,
+        "ident": "KBFI",
+        "type": "large_airport",
+        "name": "Boeing Field King County International Airport",
+        "latitude_deg": 47.52999878,
+        "longitude_deg": -122.302002,
+        "iso_region": "US-WA",
+        "municipality": "Seattle",
+        "local_code": "BFI"
+    },
+    {
+        "id": 3552,
+        "ident": "KGEG",
+        "type": "large_airport",
+        "name": "Spokane International Airport",
+        "latitude_deg": 47.61989975,
+        "longitude_deg": -117.5339966,
+        "iso_region": "US-WA",
+        "municipality": "Spokane",
+        "local_code": "GEG"
+    },
+    {
+        "id": 3875,
+        "ident": "KSEA",
+        "type": "large_airport",
+        "name": "Seattle Tacoma International Airport",
+        "latitude_deg": 47.449001,
+        "longitude_deg": -122.308998,
+        "iso_region": "US-WA",
+        "municipality": "Seattle",
+        "local_code": "SEA"
+    },
+    {
+        "id": 3887,
+        "ident": "KSLC",
+        "type": "large_airport",
+        "name": "Salt Lake City International Airport",
+        "latitude_deg": 40.78839874,
+        "longitude_deg": -111.9779968,
+        "iso_region": "US-UT",
+        "municipality": "Salt Lake City",
+        "local_code": "SLC"
+    },
+    {
+        "id": 3632,
+        "ident": "KLAX",
+        "type": "large_airport",
+        "name": "Los Angeles International Airport",
+        "latitude_deg": 33.94250107,
+        "longitude_deg": -118.4079971,
+        "iso_region": "US-CA",
+        "municipality": "Los Angeles",
+        "local_code": "LAX"
+    },
+    {
+        "id": 3744,
+        "ident": "KOAK",
+        "type": "large_airport",
+        "name": "Metropolitan Oakland International Airport",
+        "latitude_deg": 37.721298,
+        "longitude_deg": -122.221001,
+        "iso_region": "US-CA",
+        "municipality": "Oakland",
+        "local_code": "OAK"
+    },
+    {
+        "id": 3752,
+        "ident": "KONT",
+        "type": "large_airport",
+        "name": "Ontario International Airport",
+        "latitude_deg": 34.05599976,
+        "longitude_deg": -117.6009979,
+        "iso_region": "US-CA",
+        "municipality": "Ontario",
+        "local_code": "ONT"
+    },
+    {
+        "id": 3862,
+        "ident": "KSAN",
+        "type": "large_airport",
+        "name": "San Diego International Airport",
+        "latitude_deg": 32.73360062,
+        "longitude_deg": -117.1900024,
+        "iso_region": "US-CA",
+        "municipality": "San Diego",
+        "local_code": "SAN"
+    },
+    {
+        "id": 3878,
+        "ident": "KSFO",
+        "type": "large_airport",
+        "name": "San Francisco International Airport",
+        "latitude_deg": 37.61899948,
+        "longitude_deg": -122.375,
+        "iso_region": "US-CA",
+        "municipality": "San Francisco",
+        "local_code": "SFO"
+    },
+    {
+        "id": 3883,
+        "ident": "KSJC",
+        "type": "large_airport",
+        "name": "Norman Y. Mineta San Jose International Airport",
+        "latitude_deg": 37.362598,
+        "longitude_deg": -121.929001,
+        "iso_region": "US-CA",
+        "municipality": "San Jose",
+        "local_code": "SJC"
+    },
+    {
+        "id": 3892,
+        "ident": "KSMF",
+        "type": "large_airport",
+        "name": "Sacramento International Airport",
+        "latitude_deg": 38.69540024,
+        "longitude_deg": -121.5910034,
+        "iso_region": "US-CA",
+        "municipality": "Sacramento",
+        "local_code": "SMF"
+    },
+    {
+        "id": 3894,
+        "ident": "KSNA",
+        "type": "large_airport",
+        "name": "John Wayne Airport-Orange County Airport",
+        "latitude_deg": 33.67570114,
+        "longitude_deg": -117.8679962,
+        "iso_region": "US-CA",
+        "municipality": "Santa Ana",
+        "local_code": "SNA"
+    },
+    {
+        "id": 3631,
+        "ident": "KLAS",
+        "type": "large_airport",
+        "name": "McCarran International Airport",
+        "latitude_deg": 36.08010101,
+        "longitude_deg": -115.1520004,
+        "iso_region": "US-NV",
+        "municipality": "Las Vegas",
+        "local_code": "LAS"
+    },
+    {
+        "id": 3853,
+        "ident": "KRNO",
+        "type": "large_airport",
+        "name": "Reno Tahoe International Airport",
+        "latitude_deg": 39.49909973,
+        "longitude_deg": -119.7679977,
+        "iso_region": "US-NV",
+        "municipality": "Reno",
+        "local_code": "RNO"
+    },
+    {
+        "id": 3772,
+        "ident": "KPHX",
+        "type": "large_airport",
+        "name": "Phoenix Sky Harbor International Airport",
+        "latitude_deg": 33.43429947,
+        "longitude_deg": -112.012001,
+        "iso_region": "US-AZ",
+        "municipality": "Phoenix",
+        "local_code": "PHX"
+    },
+    {
+        "id": 3932,
+        "ident": "KTUS",
+        "type": "large_airport",
+        "name": "Tucson International Airport",
+        "latitude_deg": 32.11610031,
+        "longitude_deg": -110.9410019,
+        "iso_region": "US-AZ",
+        "municipality": "Tucson",
+        "local_code": "TUS"
+    },
+    {
+        "id": 3768,
+        "ident": "KPDX",
+        "type": "large_airport",
+        "name": "Portland International Airport",
+        "latitude_deg": 45.58869934,
+        "longitude_deg": -122.5979996,
+        "iso_region": "US-OR",
+        "municipality": "Portland",
+        "local_code": "PDX"
+    }
+]
