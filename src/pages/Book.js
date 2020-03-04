@@ -446,7 +446,7 @@ class Book extends React.Component {
 			const cents_str = `.${this.forceDigits2(price_cents % 100)}`;
 			const price_str = `$${dollars_str + cents_str}`;
 
-			const price_cents_total = price_cents + price_cents_arrival;
+			const price_cents_total = (price_cents + price_cents_arrival) * this.state.ctPassengers;
 			const dollars_str_total = Math.floor(price_cents_total / 100).toString();
 			const cents_str_total = `.${this.forceDigits2(price_cents_total % 100)}`;
 			const price_str_total = `$${dollars_str_total + cents_str_total}`;
@@ -497,6 +497,21 @@ class Book extends React.Component {
 								</div>
 								: null
 						}
+						<div style={{
+							display: "flex",
+						}}>
+							<div style={{
+								flex: 2,
+							}}>
+								Passengers
+							</div>
+							<div style={{
+								flex: 1,
+								textAlign: "right",
+							}}>
+								x{this.state.ctPassengers}
+							</div>
+						</div>
 						<div style={{
 							display: "flex",
 						}}>

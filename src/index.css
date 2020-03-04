@@ -73,6 +73,19 @@ code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+input[type=submit] {
+	color: #31456a;
+	background-color: #E3EDF7;
+	border: none;
+	border-radius: 12px;
+	box-shadow: 6px 6px 12px #d6dde48d, -6px -6px 12px #ffffffcd;
+	outline: none;
+}
+
+input[type=submit]:active {
+	box-shadow: 6px 6px 12px #d6dde48d, -6px -6px 12px #ffffffcd, inset 6px 6px 12px #d6dde48d, inset -6px -6px 12px #ffffffcd;
+}
+
 input[type=text] {
 	font-size: 1rem;
 	background: #E3EDF7;
@@ -136,6 +149,7 @@ div[class$="control-is-focused"] {
 	width: 100%;
 }
 
+/*
 .react-datepicker__input-container {
 	width: 100%;
 }
@@ -148,7 +162,6 @@ div[class$="control-is-focused"] {
 
 .react-datepicker {
 	color: #31456a !important;
-	/*background-color: #f008 !important;*/
 	border: 0 !important;
 	background: inherit;
 }
@@ -161,6 +174,7 @@ div[class$="control-is-focused"] {
 .react-datepicker__current-month {
 	color: #31456a !important;
 }
+*/
 
 /*
 Loading

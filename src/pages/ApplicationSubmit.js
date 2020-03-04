@@ -8,6 +8,7 @@ class ApplicationSubmit extends React.Component {
 				flexDirection: "column",
 				alignItems: "center",
 				margin: "2rem",
+				marginBottom: "40rem",
 			}}>
 				<b style={{
 					fontSize: "2rem",
@@ -17,7 +18,6 @@ class ApplicationSubmit extends React.Component {
 				<br />
 				We will get back to you within 5 - 7 business days.
 			</div>
-
 		)
 	}
 }

@@ -1,13 +1,80 @@
 import React from 'react'
 
-import ApplicationSubmit from './ApplicationSubmit'
-
 import Card from '../components/Card'
 import SmartLink from '../components/SmartLink'
+import ErrorMsg from '../components/ErrorMsg'
+
+import ApplicationSubmit from './ApplicationSubmit'
 
 class Career extends React.Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			title: "",
+			fullName: "",
+			email: "",
+			position: "",
+			yrs: "",
+			curPrevJob: "",
+			errorMessage: {},
+
+			isFilled: false,
+		}
+	}
+
+	handleChange = (event) => {
+		const valueOf = event.target.value;
+		const name = event.target.name;
+		this.setState((prevState) => {
+			return ({
+				[name]: valueOf,
+				errorMessage: {
+					...prevState.errorMessage,
+					[name]: null,
+				}
+			})
+		})
+	}
+
+	handleSubmit = (event) => {
+		let errMsg = {};
+
+		if (!this.state.title) {
+			errMsg["title"] = "Please enter your title";
+		}
+		if (!this.state.fullName) {
+			errMsg["fullName"] = "Please enter your full name";
+		}
+		if (!this.state.email) {
+			errMsg["email"] = "Please enter your email address";
+		}
+		if (!this.state.position) {
+			errMsg["position"] = "Please enter your position of interest";
+		}
+		if (!this.state.yrs) {
+			errMsg["yrs"] = "Please enter your years of experience";
+		}
+		if (!this.state.curPrevJob) {
+			errMsg["curPrevJob"] = "Please enter your current or previous job title";
+		}
+
+		this.setState({
+			errorMessage: errMsg,
+		});
+
+		if (Object.keys(errMsg).length === 0) {
+			this.setState({
+				isFilled: true,
+			});
+		}
+
+		event.preventDefault();
+	}
+
 	render() {
-		return (
+		if (this.state.isFilled) return <ApplicationSubmit />
+		else return (
 			<div style={{
 				display: "flex",
 				flexDirection: "column",
@@ -25,59 +92,111 @@ class Career extends React.Component {
 					please fill out the form below.
 				</Card>
 				<Card>
-					<div>
-						Title
-					</div>
-					<input
-						name="title"
-						type="text"
-						placeholder="e.g. Ms. Mrs. Mr."
-					/>
-					<div>
-						Full Name
-					</div>
-					<input
-						name="fullName"
-						type="text"
-					/>
-					<div>
-						Your Email Address
-					</div>
-					<input
-						name="email"
-						type="text"
-					/>
-					<div>
-						Position
-					</div>
-					<input
-						name="position"
-						type="text"
-					/>
-					<div>
-						Years of Experience
-					</div>
-					<input
-						name="experience"
-						type="text"
-					/>
-					<div>
-						Current/Previous Job Title
-					</div>
-					<input
-						name="titlePrev"
-						type="text"
-					/>
-					<div style={{
-						paddingTop: "2em",
-						display: "flex",
-						flexDirection: "row-reverse",
-					}}>
-						<SmartLink href="/appSubmit">
-							Submit
-						</SmartLink>
-					</div>
-
+					<form
+						onSubmit={this.handleSubmit}
+						style={{
+							width: "25rem",
+						}}
+					>
+						<div>
+							<label>
+								Title <br />
+								<input
+									name="title"
+									type="text"
+									placeholder="e.g. Ms. Mrs. Mr."
+									value={this.state.title}
+									onChange={this.handleChange}
+								/>
+								<ErrorMsg>
+									{this.state.errorMessage.title}
+								</ErrorMsg>
+							</label>
+						</div>
+						<div>
+							<label>
+								Full Name
+								<input
+									name="fullName"
+									type="text"
+									value={this.state.fullName}
+									onChange={this.handleChange}
+								/>
+								<ErrorMsg>
+									{this.state.errorMessage.fullName}
+								</ErrorMsg>
+							</label>
+						</div>
+						<div>
+							<label>
+								Your Email Address
+								<input
+									name="email"
+									type="text"
+									value={this.state.email}
+									onChange={this.handleChange}
+								/>
+								<ErrorMsg>
+									{this.state.errorMessage.email}
+								</ErrorMsg>
+							</label>
+						</div>
+						<div>
+							<label>
+								Position
+								<input
+									name="position"
+									type="text"
+									value={this.state.position}
+									onChange={this.handleChange}
+								/>
+								<ErrorMsg>
+									{this.state.errorMessage.position}
+								</ErrorMsg>
+							</label>
+						</div>
+						<div>
+							<label>
+								Years of Experience
+								<input
+									name="yrs"
+									type="text"
+									value={this.state.yrs}
+									onChange={this.handleChange}
+								/>
+								<ErrorMsg>
+									{this.state.errorMessage.yrs}
+								</ErrorMsg>
+							</label>
+						</div>
+						<div>
+							<label>
+								Current/Previous Job Title
+								<input
+									name="curPrevJob"
+									type="text"
+									value={this.state.curPrevJob}
+									onChange={this.handleChange}
+								/>
+								<ErrorMsg>
+									{this.state.errorMessage.curPrevJob}
+								</ErrorMsg>
+							</label>
+						</div>
+						<div style={{
+							paddingTop: "2em",
+							display: "flex",
+							flexDirection: "row-reverse",
+						}}>
+							<input
+								type="submit"
+								value="Submit"
+								style={{
+									width: "10em",
+								}}
+							/>
+						</div>
+					</form>
 				</Card>
 			</div>
 		);

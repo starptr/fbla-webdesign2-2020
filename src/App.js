@@ -8,6 +8,7 @@ import {
 	useRouteMatch
 } from "react-router-dom"
 
+import './index.css'
 import logo from './logo.svg';
 import './App.css';
 
